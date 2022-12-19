@@ -1,0 +1,69 @@
+﻿using Newtonsoft.Json;
+using ShippingCompany.ClassHelper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace ShippingCompany.Page
+{
+    /// <summary>
+    /// Логика взаимодействия для Login.xaml
+    /// </summary>
+    public partial class Login 
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private async void BtnSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string url = $"http://spacebaikals.ru/Zolto/auth?login={TxbLogin.Text}&password={PsbBox.Password}";
+                HttpClient client = new HttpClient();
+
+                var response = await client.GetAsync(url);
+                var responseContent = await response.Content.ReadAsStringAsync();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var _signIn = JsonConvert.DeserializeObject<SignIn>(responseContent);
+
+                    switch (_signIn.RoleUser)
+                    {
+                        case "Админ":
+                            Navigator.ViewDate.Navigate(new MenuAdmin(TxbLogin.Text));
+                            break;
+
+                        case "Клиент":
+                            MessageBox.Show(_signIn.RoleUser);
+                            Navigator.ViewDate.Navigate(new ClientUser());
+                            break;
+
+                        default:
+                            MessageBox.Show("Неверная обработка данных");
+                            break;
+                    }
+                }
+            }
+            catch (Exception er)
+            {
+
+                er.Message.ToString();
+            }
+        }
+    }
+}
