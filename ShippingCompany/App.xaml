@@ -36,5 +36,7 @@
         <Style TargetType="TextBlock" x:Key="TxbName">
             <Setter Property="FontSize" Value="20"/>
         </Style>
+        
+        
     </Application.Resources>
 </Application>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\student\Downloads\ProjectMyGroup-master\ProjectMyGroup-master\ShippingCompany\obj\Debug\
+C:\Users\user\Downloads\ProjectMyGroup-master (2)\ProjectMyGroup-master\ProjectMyGroup-master\ShippingCompany\obj\Debug\
 ShippingCompany
 none
 false
 DEBUG;TRACE
-C:\Users\student\Downloads\ProjectMyGroup-master\ProjectMyGroup-master\ShippingCompany\App.xaml
-8158087348
+C:\Users\user\Downloads\ProjectMyGroup-master (2)\ProjectMyGroup-master\ProjectMyGroup-master\ShippingCompany\App.xaml
+10924400450
 
-19-114002120
-14-586446146
-MainWindow.xaml;Page\AddPage\AddCruise.xaml;Page\AddPage\AddUser.xaml;Page\ClientUser.xaml;Page\DataView\DataViewCruise.xaml;Page\Login.xaml;Page\MenuAdmin.xaml;Page\DataView\ViewData.xaml;
+21-1787958125
+14-1584336451
+MainWindow.xaml;Page\AddPage\AddCruise.xaml;Page\AddPage\AddUser.xaml;Page\DataView\ClientUser.xaml;Page\DataView\DataCompany.xaml;Page\DataView\DataViewCruise.xaml;Page\Menuuser.xaml;Page\Login.xaml;Page\MenuAdmin.xaml;Page\DataView\ViewData.xaml;
 
 False
 

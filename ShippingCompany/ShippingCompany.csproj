@@ -85,11 +85,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\ClientUser.xaml">
+    <Page Include="Page\DataView\ClientUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\DataView\DataCompany.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page\DataView\DataViewCruise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\Menuuser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,11 +121,17 @@
     <Compile Include="Page\AddPage\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\ClientUser.xaml.cs">
+    <Compile Include="Page\DataView\ClientUser.xaml.cs">
       <DependentUpon>ClientUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\DataView\DataCompany.xaml.cs">
+      <DependentUpon>DataCompany.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\DataView\DataViewCruise.xaml.cs">
       <DependentUpon>DataViewCruise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Menuuser.xaml.cs">
+      <DependentUpon>Menuuser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>

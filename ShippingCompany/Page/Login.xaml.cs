@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using ShippingCompany.ClassHelper;
+using ShippingCompany.Page.DataView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,7 +51,7 @@ namespace ShippingCompany.Page
 
                         case "Клиент":
                             MessageBox.Show(_signIn.RoleUser);
-                            Navigator.ViewDate.Navigate(new ClientUser());
+                            Navigator.ViewDate.Navigate(new Menuuser(TxbLogin.Text));
                             break;
 
                         default:
