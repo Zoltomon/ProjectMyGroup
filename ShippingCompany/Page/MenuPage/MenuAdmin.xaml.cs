@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using ShippingCompany.ClassHelper;
+using ShippingCompany.Page;
+using ShippingCompany.Page.DataView;
+
+namespace ShippingCompany.Page
+{
+    /// <summary>
+    /// Логика взаимодействия для MenuAdmin.xaml
+    /// </summary>
+    public partial class MenuAdmin
+    {
+        public MenuAdmin(string nameUser)
+        {
+            InitializeComponent();
+            TxbLoginUser.Text = ("Приветствую вас в админ панеле пользователь " + nameUser + "!");
+        }
+        private void Btnback_Click(object sender, RoutedEventArgs e)
+        {
+            Navigator.ViewDate.GoBack();
+        }
+
+        private void BtnUser_Click(object sender, RoutedEventArgs e)
+        {
+            Navigator.ViewDate.Navigate(new ViewData());
+        }
+
+        private void BtnCruise_Click(object sender, RoutedEventArgs e)
+        {
+            Navigator.ViewDate.Navigate(new DataViewCruise());
+        }
+
+        private void BtnCompany_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnPort_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnShip_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
+}
