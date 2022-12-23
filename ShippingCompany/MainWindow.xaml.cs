@@ -48,11 +48,7 @@ namespace ShippingCompany
 
             MessageBox.Show(selectedDate.Value.Date.ToShortDateString());
         }
-
-        private void BtnClose_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+        
     }
 }
 

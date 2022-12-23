@@ -37,8 +37,10 @@
             <Button 
                 Name="BtnCreate"
                 Content="Создать пользователя"
-                Click="BtnCreate_Click"/>
+                Click="BtnCreate_Click"
+                Style="{StaticResource BtnAll}"/>
             <Button Name="BtnBack"
+                    Style="{StaticResource BtnAll}"
                     Click="BtnBack_Click"
                     Content="Назад" />
         </StackPanel>

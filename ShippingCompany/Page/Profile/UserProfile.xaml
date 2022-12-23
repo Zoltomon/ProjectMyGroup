@@ -11,6 +11,8 @@
     <Grid>
         <StackPanel>
             <TextBlock  Name="TxbUser" Text="Имя пользователя" Style="{StaticResource TxbName}"/>
+            <Image/>
+            <Button Content="Назад" Name="btnBack" Click="btnBack_Click"  Style="{StaticResource BtnAll}"/>
         </StackPanel>
     </Grid>
 </Page>

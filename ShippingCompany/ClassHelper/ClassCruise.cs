@@ -8,6 +8,7 @@ namespace ShippingCompany.ClassHelper
 {
     internal class ClassCruise
     {
+        public string IdCruise { get; set; }
         public string NameCruise { get; set; }
         public string PriceCruise { get; set; }
         public string ShipName { get; set; }

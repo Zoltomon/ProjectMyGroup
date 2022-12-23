@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ShippingCompany.Page.DataView
+namespace ShippingCompany.Page
 {
     /// <summary>
-    /// Логика взаимодействия для DataCompany.xaml
+    /// Логика взаимодействия для Registration.xaml
     /// </summary>
-    public partial class DataCompany 
+    public partial class Registration 
     {
-        public DataCompany()
+        public Registration()
         {
             InitializeComponent();
         }

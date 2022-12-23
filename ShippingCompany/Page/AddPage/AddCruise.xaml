@@ -23,12 +23,12 @@
 
             <GroupBox Header="Выберите тип корабля:" BorderThickness="0">
                 <ComboBox
-                    Name="TxtShip" SelectedValuePath="id" DisplayMemberPath="Title"/>
+                    Name="CmbShip"/>
             </GroupBox>
 
             <GroupBox Header="Выберите порт остановки:" BorderThickness="0">
-                <TextBox 
-                    Name="TextBoxPark"/>
+                <ComboBox 
+                    Name="CmbPark"/>
             </GroupBox>
 
             <GroupBox Header="Введите время отплытия:" BorderThickness="0">
@@ -49,9 +49,11 @@
             <Button 
                 Name="BtnCreate"
                 Content="Создать круиз"
-                Click="BtnCreate_Click"/>
+                Click="BtnCreate_Click"
+                Style="{StaticResource BtnAll}"/>
             <Button Name="BtnBack"
                     Click="BtnBack_Click"
+                    Style="{StaticResource BtnAll}"
                     Content="Назад" />
         </StackPanel>
     </Grid>

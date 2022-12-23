@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShippingCompany.ClassHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
@@ -25,6 +26,11 @@ namespace ShippingCompany.Page.Profile
         {
             InitializeComponent();
             TxbUser.Text = name;
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Navigator.ViewDate.GoBack();
         }
     }
 }

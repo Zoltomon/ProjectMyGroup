@@ -16,7 +16,6 @@
                       FontSize="16"
                       BorderThickness="0">
                 <TextBox Name="TxbLogin"
-                         Text="Введите пароль...."
                          FontSize="16"
                          Height="30"
                          Opacity="0.2"/>
@@ -32,14 +31,19 @@
             <CheckBox Content="Запомнить меня"
                       Name="ChckBx"
                       FontSize="16"
-                      Click="ChckBx_Click"
+                      Checked="ChckBx_Checked"
                     />
             <Button
                 Name="BtnSignIn"
                 Height="30"
                 Click="BtnSignIn_Click"
-                Content="Войти"/>
-            
+                Content="Войти"
+                Style="{StaticResource BtnAll}"/>
+            <Button Content="Регистрация"
+                    Name="BtnReg"
+                    Style="{StaticResource BtnAll}"
+                    Click="BtnReg_Click"/>
+
         </StackPanel>
     </Grid>
 </Page>

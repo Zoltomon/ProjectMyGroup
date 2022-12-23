@@ -28,10 +28,10 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" Grid.Row="0">
-            <Button Content="Назад" Width="200" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click"/>
+            <Button Content="Назад" Style="{StaticResource BtnAll}" Width="200" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Orientation="Horizontal">
-            <Button Content="Добавить пользователя" Width="200" HorizontalAlignment="Left" Name="BtnCreate" Click="BtnCreate_Click"/>
+            <Button Content="Добавить пользователя" Style="{StaticResource BtnAll}" Width="200" HorizontalAlignment="Left" Name="BtnCreate" Click="BtnCreate_Click"/>
         </StackPanel>
     </Grid>
 </Page>

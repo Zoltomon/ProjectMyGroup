@@ -23,10 +23,10 @@ namespace ShippingCompany.Page
     /// </summary>
     public partial class MenuAdmin
     {
-        public MenuAdmin(string nameUser)
+        public MenuAdmin(string UserName)
         {
             InitializeComponent();
-            TxbLoginUser.Text = ("Приветствую вас в админ панеле пользователь " + nameUser + "!");
+            TxbLoginUser.Text = ("Приветствую вас в админ панеле пользователь " + UserName + "!");
         }
         private void Btnback_Click(object sender, RoutedEventArgs e)
         {
@@ -43,19 +43,15 @@ namespace ShippingCompany.Page
             Navigator.ViewDate.Navigate(new DataViewCruise());
         }
 
-        private void BtnCompany_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void BtnPort_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigator.ViewDate.Navigate(new ViewInfoPort());
         }
 
         private void BtnShip_Click(object sender, RoutedEventArgs e)
         {
-
+            Navigator.ViewDate.Navigate(new ViewInfoShip());
         }
     }
 }

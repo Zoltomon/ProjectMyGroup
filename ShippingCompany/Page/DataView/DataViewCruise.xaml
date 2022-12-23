@@ -18,8 +18,10 @@
             AutoGenerateColumns="False"
             IsReadOnly="True"
             Name="GridList"
-            Grid.Row="1">
+            Grid.Row="1"
+            Background="AliceBlue">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="ИД" Width="*" Binding="{Binding IdCruise}"/>
                 <DataGridTextColumn Header="Путь" Width="*"  Binding="{Binding NameCruise}"/>
                 <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding PriceCruise}"/>
                 <DataGridTextColumn Header="Тип корабля" Width="*"  Binding="{Binding ShipName}"/>
@@ -41,10 +43,10 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal">
-            <Button Content="Назад" Width="200" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click"/>
+            <Button Content="Назад" Style="{StaticResource BtnAll}" Width="200" HorizontalAlignment="Right" Name="BtnBack" Click="BtnBack_Click"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2">
-            <Button Content="Добавить круиз" Width="200" HorizontalAlignment="Left" Name="BtnCreateCruise" Click="BtnCreateCruise_Click_1"/>
+            <Button Content="Добавить круиз" Style="{StaticResource BtnAll}" Width="200" HorizontalAlignment="Left" Name="BtnCreateCruise" Click="BtnCreateCruise_Click_1"/>
         </StackPanel>
     </Grid>
 </Page>

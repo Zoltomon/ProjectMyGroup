@@ -27,6 +27,19 @@ namespace ShippingCompany.Page.AddPage
         {
             InitializeComponent();
 
+            CmbPark.Items.Add("Севастополь");
+            CmbPark.Items.Add("Порт-Нигерия");
+            CmbPark.Items.Add("Порт-Артур");
+            CmbPark.Items.Add("Севастополь");
+            CmbPark.Items.Add("Порт-Кристиану");
+
+
+
+            CmbShip.Items.Add("Линкор");
+            CmbShip.Items.Add("Танкер");
+            CmbShip.Items.Add("Фрегат");
+            CmbShip.Items.Add("Лайнер");
+            CmbShip.Items.Add("Сухогруз");
         }
 
         private async void BtnCreate_Click(object sender, RoutedEventArgs e)
@@ -40,8 +53,8 @@ namespace ShippingCompany.Page.AddPage
                 {
                     NameCruise = TxbName.Text,
                     DateCruise = TxbDate.Text,
-                    Ship = TxtShip.Text,
-                    Parking = TextBoxPark.Text,
+                    Ship = CmbShip.Text,
+                    Parking = CmbPark.Text,
                     TimeSailing = TxbTime.Text,
                     Price = TxbPrice.Text,
                     Occupied = TxbOccupied.Text

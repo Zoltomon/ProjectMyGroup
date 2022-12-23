@@ -24,6 +24,7 @@ namespace ShippingCompany.Page.DataView
     /// </summary>
     public partial class DataViewCruise
     {
+        private ClassCruise _cruise {get; set;}
         public DataViewCruise()
         {
             InitializeComponent();
@@ -61,9 +62,31 @@ namespace ShippingCompany.Page.DataView
             Navigator.ViewDate.GoBack();
         }
 
-        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        private async void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string url = $"http://spacebaikals.ru/delete/{_cruise.IdCruise}";
 
+                HttpClient httpClient = new HttpClient();
+                var responce = await httpClient.DeleteAsync(url);
+
+                var responseContent = await responce.Content.ReadAsStringAsync();
+
+                if (responce.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    var _client = JsonConvert.DeserializeObject<ClassCruise>(responseContent);
+                }
+                else
+                {
+                    MessageBox.Show("Данные обработать нельзя!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
 
         private void BtnCreateCruise_Click_1(object sender, RoutedEventArgs e)

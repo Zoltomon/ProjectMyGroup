@@ -22,7 +22,7 @@ namespace ShippingCompany.Page
     /// <summary>
     /// Логика взаимодействия для Login.xaml
     /// </summary>
-    public partial class Login 
+    public partial class Login
     {
         public Login()
         {
@@ -51,7 +51,7 @@ namespace ShippingCompany.Page
                             break;
 
                         case "Клиент":
-                            MessageBox.Show("Ваша роль в этом приложении "+ _signIn.RoleUser + "!");
+                            MessageBox.Show("Ваша роль в этом приложении " + _signIn.RoleUser + "!");
                             Navigator.ViewDate.Navigate(new Menuuser(TxbLogin.Text));
                             break;
 
@@ -68,9 +68,16 @@ namespace ShippingCompany.Page
             }
         }
 
-        private void ChckBx_Click(object sender, RoutedEventArgs e)
+        private void ChckBx_Checked(object sender, RoutedEventArgs e)
         {
 
+
+        }
+
+        private void BtnReg_Click(object sender, RoutedEventArgs e)
+        {
+            Navigator.ViewDate.Navigate(new Registration());
         }
     }
 }
+

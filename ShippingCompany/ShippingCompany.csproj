@@ -70,6 +70,8 @@
     <Compile Include="ClassHelper\CreateCruise.cs" />
     <Compile Include="ClassHelper\CreateUser.cs" />
     <Compile Include="ClassHelper\Navigator.cs" />
+    <Compile Include="ClassHelper\PortInfoClass.cs" />
+    <Compile Include="ClassHelper\ShipInfoClass.cs" />
     <Compile Include="ClassHelper\SignIn.cs" />
     <Compile Include="ClassHelper\UserClass.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -77,6 +79,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Page\AddPage\AddCruise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\AddPage\AddPort.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,11 +94,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\DataView\DataCompany.xaml">
+    <Page Include="Page\DataView\DataViewCruise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\DataView\DataViewCruise.xaml">
+    <Page Include="Page\DataView\ViewInfoPort.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\DataView\ViewInfoShip.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,10 +126,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Page\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Page\AddPage\AddCruise.xaml.cs">
       <DependentUpon>AddCruise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\AddPage\AddPort.xaml.cs">
+      <DependentUpon>AddPort.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\AddPage\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
@@ -127,11 +144,14 @@
     <Compile Include="Page\DataView\ClientUser.xaml.cs">
       <DependentUpon>ClientUser.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\DataView\DataCompany.xaml.cs">
-      <DependentUpon>DataCompany.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Page\DataView\DataViewCruise.xaml.cs">
       <DependentUpon>DataViewCruise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\DataView\ViewInfoPort.xaml.cs">
+      <DependentUpon>ViewInfoPort.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\DataView\ViewInfoShip.xaml.cs">
+      <DependentUpon>ViewInfoShip.xaml</DependentUpon>
     </Compile>
     <Compile Include="Page\MenuPage\Menuuser.xaml.cs">
       <DependentUpon>Menuuser.xaml</DependentUpon>
@@ -147,6 +167,9 @@
     </Compile>
     <Compile Include="Page\Profile\UserProfile.xaml.cs">
       <DependentUpon>UserProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

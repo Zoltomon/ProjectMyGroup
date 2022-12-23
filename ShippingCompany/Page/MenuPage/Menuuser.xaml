@@ -11,10 +11,10 @@
     <Grid>
         <StackPanel VerticalAlignment="Center">
             <TextBlock Name="TxbUser" Text="Имя пользователя" Style="{StaticResource TxbName}"/>
-            <Button Content="Информация о круизах" Name="BtnCruise" Click="BtnCruise_Click"/>
-            <Button Content="Информация о компании" Name="BtnCompany"/>
-            <Button Content="Профиль" Name="BtnUserProfile" Click="BtnUserProfile_Click"/>
-            <Button Content="Выход" Name="Btnback" Click="Btnback_Click"/>
+            <Button Content="Информация о круизах" Name="BtnCruise" Click="BtnCruise_Click" Style="{StaticResource BtnAll}"/>
+            <Button Content="Информация о компании" Name="BtnCompany" Style="{StaticResource BtnAll}"/>
+            <Button Content="Профиль" Name="BtnUserProfile" Click="BtnUserProfile_Click" Style="{StaticResource BtnAll}"/>
+            <Button Content="Выход" Name="Btnback" Click="Btnback_Click" Style="{StaticResource BtnAll}"/>
         </StackPanel>
     </Grid>
 </Page>

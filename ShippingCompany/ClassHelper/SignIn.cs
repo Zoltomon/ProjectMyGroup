@@ -8,6 +8,7 @@ namespace ShippingCompany.ClassHelper
 {
     public class SignIn
     {
+        public string UserName { get; set; }
         public string status { get; set; }
         public string RoleUser { get; set; }
         public string IdUser { get; set; }

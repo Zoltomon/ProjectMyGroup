@@ -42,7 +42,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal">
-            <Button Content="Назад" Name="BtnBack" Click="BtnBack_Click" Width="200"/>
+            <Button Content="Назад" Style="{StaticResource BtnAll}" Name="BtnBack" Click="BtnBack_Click" Width="200"/>
         </StackPanel>
     </Grid>
 </Page>
